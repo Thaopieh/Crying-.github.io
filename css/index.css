@@ -80,6 +80,7 @@ strong {
     font-size: 14px;
 }
 
+
 /* searcg bar  */
 .hotel-list-page {
     background-image: url("https://pages.trip.com/Hotels/images/V8HomePageBackGround.webp");
@@ -402,6 +403,19 @@ a{
 }
 .carousel h2{
     margin-bottom: 30px;
+}
+.card-text{
+    margin: 15px 0px;
+}
+h5{
+    height: 30px;
+    width: 240px;
+    font-size: 1.125em;
+    text-wrap: wrap;
+}
+.btn-primary{
+    float: right;
+
 }
 table {
     display: table;
