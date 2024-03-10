@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasting</title>
+
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bt  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- main  -->
+    <link rel="stylesheet" href="./css/index.css">
+
+
+
+</head>
+
+<body>
+    <!-- vô web inspect code lên cop layout -->
+
+    <!-- Quang -->
+    <header>
+        <div class="container-fluid navi">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h1 style="color: white;">Trip.com</h1>
+                </div>
+                <div class="col-lg-5">
+                    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm justify-content-start">
+
+                        <ul class="navi navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hotels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trains</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Attractions & Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bundle & Save</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><strong>...</strong></a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div class="col-lg-5">
+                    <nav class="navi2 navbar navbar-expand-lg navbar-expand-md navbar-expand-sm justify-content-end">
+
+                        <ul class="navi navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">List My Property</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">VND</a>
+                            </li>
+                            <li class="nav-item ">
+                                <button type="button" class="header-search-booking-btn">Search Booking</button>
+                            </li>
+                            <li class="nav-item ">
+                                <button type="button" class="header-register-btn">Sign in / Register</button>
+                            </li>
+
+
+                        </ul>
+
+                    </nav>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </header>
+    <!-- Header search -->
+    <section id="hotel_container">
+        <section>
+            <article>
+                <div class="hotel-list-page">
+                    <div class="searchBox">
+                        <!-- search bar, Thảo, Thuận -->
+                        <div class="hotel-searchBox">
+                            <ul class="ul-search">
+                                <li class="list-item list-destination">
+                                    <div class="search-container">
+                                        <label for="hotel-destination" id="hotel-destination-label">Destination</label>
+                                        <div></div>
+                                        <input type="text" id="hotel-destination" value=""
+                                            placeholder="City, airport, region...">
+                                        <div></div>
+                                    </div>
+                                </li>
+                                <li class="list-item list-calendar">
+
+                                    <div class="calendar-container">
+                                        <div class="in">
+                                            <label class="text" for="checkIn">Check-in</label>
+                                            <input type="text" id="checkIN" value="Wed, Mar 13"
+                                                placeholder="Select date">
+                                        </div>
+                                        <div id="time_booking"> 1 night</div>
+                                        <div class="out">
+                                            <label class="text" for="checkOut">Check-out</label>
+
+                                            <input type="text" id="checkOut" value="Fri, Mar 8"
+                                                placeholder="Select date">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-item rooms-and-guests">
+                                    <div class="room-guest-container">
+                                        <label class="" for="rooms-and-guests">Rooms and Guests</label>
+                                        <div></div>
+                                        <p id="room-guest-text">
+                                            <span>1 room, </span>
+                                            <span>2 adults, </span>
+                                            <span>0 children</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-item button">
+                                    <div class="search-button-container">
+                                        <button class="search-button">
+                                            <i type="search" class="fa fa-search"></i>
+                                            <span>Search</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="add-on-container">
+                                <div class="is-travel-working">
+                                    <input type="checkbox" id="travel-for-work">
+                                    <label for="travel-for-work" class="is-travel-working-text">I'm traveling for
+                                        work</label>
+                                    <i class="is-travel-working-icon fa-solid fa-circle-info">
+                                        <div class="is-travel-working-status">
+                                            <!-- If you select this option, we'll highlight hotels and amenities popular with business travelers. -->
+                                        </div>
+                                    </i>
+
+                                </div>
+                                <div class="star-rating">
+                                    <div class="star-rating-text">Star Rating</div>
+
+                                    <!-- <div class="star-rating-icon"> -->
+                                    <ul class="star">
+
+                                        <li>
+                                            <div>
+                                                <button>
+                                                    <i class="fa-solid fa-less-than-equal"></i> 2
+                                                    <i class="fa-regular fa-star"></i>
+
+                                                </button>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div>
+                                                <button>
+                                                    3 <i class="fa-regular fa-star"></i>
+
+                                                </button>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <button>
+                                                    4 <i class="fa-regular fa-star"></i>
+
+
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <button>
+                                                    5 <i class="fa-regular fa-star"></i>
+
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- </div> -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+        </section>
+    </section>
+
+    <section class="body">
+        <section class="inner">
+
+            <div class="topPick">
+                <div id="carouselExampleControls" class="carousel">
+                    <h2>Top Picks of Luxurious 5-star Hotels</h2>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a href="#">
+                            <div class="card">
+                              <div class="img-wrapper">
+                                <img src="./img/top1.webp" alt="...">
+                              </div>
+                              <div class="card-body">
+                                <a class="click-item" href="#"><h5 class="card-title">Sunway Putra Hotel Kuala Lumpur</h5> </a>
+                                
+                                <p class="card-text">
+                                  Sunway Putra Mall, 100, Jalan Putra, Chow Kit, 50350 Kuala Lumpur</p>
+                                <a href="#" class="btn btn-primary">VND 1.015.000</a>
+                              </div>
+                            </div>
+              
+                          </a>
+                          
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="./img/top2.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Baiyun Hotel</h5>
+                              <p class="card-text">No. 367 East Huanshi Road | 3.97KM from city center</p>
+                              <a href="#" class="btn btn-primary">VND 2,202,000</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="img/top3.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Generator Paris</h5>
+                                <p class="card-text">9-11 Pl. du Colonel Fabien | 2.72KM from city center</p>
+                                <a href="#" class="btn btn-primary">VND 1,564,000</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="img/top4.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Regal Airport Hotel
+                            </h5>
+                              <p class="card-text">
+                                No.9 Cheong Tat Road, HK International Airport, Chek Lap Kok</p>
+                              <a href="#" class="btn btn-primary">VND 3,488,671</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="img/top5.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Centara Grand & Bangkok Convention Centre at CentralWorld</h5>
+                              <p class="card-text">
+                                999/99 Rama 1 Road, Pathum Wan, Bangkok, 10330, Thailand
+                                
+                               </p>
+                              <a href="#" class="btn btn-primary">VND3,723,000</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="img/top6.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Roseate House New Delhi</h5>
+                                <p class="card-text">Asset 10, Northern Access Rd, Aerocity, Hospitality District, Indira Gandhi...</p>
+                                <a href="#" class="btn btn-primary">4,1376,000</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="https://codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title 7</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                              <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-2.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title 8</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                              <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card">
+                            <div class="img-wrapper">
+                              <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-3.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title 9</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                              <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div> 
+
+            </div>
+        
+        
+            <div class="budget-friendly">
+                
+        
+            </div>
+        
+            <div class="trending">
+        
+            </div>
+        
+            <div class="faq-hotel">
+                <div class="faq-title">
+                    <h2 class="title">FAQ</h2>
+                </div>
+                <div class="faq-content">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <!-- Accordion Item #1 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: white; ">
+                                How do I book a hotel on Trip.com?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                To book a hotel on Trip.com, simply enter your destination, travel dates, and the number of guests on the page. Then, browse through the available hotels and select the one you want to book. Follow the prompts to enter your payment information and complete the booking.
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Accordion Item #2 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="background-color: white;">
+                                How to get cheap hotels on Trip.com?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                There are several ways to discover affordable hotels on Trip.com. You can narrow down your search results by filtering hotels according to your preferred price range, or you can sort the results by price to view the least expensive options first.
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Accordion Item #3 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="background-color: white;">
+                                Where can I find hotel deals on Trip.com?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Trip.com offers a diverse selection of hotel deals and promotions that are available throughout the year. You can easily find these special offers on our deals page. Moreover, if you are a member of our loyalty program, you can log in to your account and discover exclusive discounted rates at hotel list pages.
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Accordion Item #4 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour" style="background-color: white;">
+                                What is the way to get lower prices at hotels?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Sometimes booking hotels in midweek is cheaper, but it also depends on the season.
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Accordion Item #5 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive" style="background-color: white;">
+                                How many hotels are listed in Trip.com?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                There are over 5,000,000 hotels in more than 230 countries or regions on Trip.com. Don't know which hotel to book? Browse the site to get ideas!
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Accordion Item #6 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix" style="background-color: white;">
+                                Can I cancel or change my hotel reservation on Trip.com?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                It depends on the hotel policy and cancellation date. Kindly check the policy section of related hotel pages. To cancel or change your reservation, log in to your trip.com account, go to "My Bookings," and follow the instructions.
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Accordion Item #7 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven" style="background-color: white;">
+                                How do I contact trip.com customer service?
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                You can contact trip.com 24/7 customer service by visiting the trip.com help center and submitting a support request. You can also contact them by phone or chat, depending on your location.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+            <div class="info-hotel">
+                <div class="seo-htl-table-info pc ">
+                    <h2 class="title">Hotel Info</h2>
+                    <table >
+                        <tbody>
+                            <tr><th>Number of hotels</th><td>
+                                <span>7,131,656</span></td>
+                            </tr>
+                            <tr><th>Number of Reviews </th><td>
+                                <span>90,240,053</span></td></tr>
+                            <tr><th>Lowest Price</th><td>
+                                <span>VND 192,100</span></td></tr>
+                                
+                            <tr><th>Highest Price</th><td>
+                                <span>VND 17,102,173</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="hotel-guide  ">
+                    <h2 class="title">
+                        Hotels on Trip.com
+                    </h2>
+                    <section id="guide_nav_v8">
+                        <div class="hotel-guide-detail">
+                            <div class="content-title">Hotels to Suit Everyone</div><div class="content-content">We all know that the hotel can make or break a holiday, which is why, at Trip.com, you can find hotels that tick every box. With a choice of over 5,000,000 hotels in more than 230 countries and regions across the world, whether you're jetting off far or staying closer to home, finding accommodation has never been easier. From hotels to hostels, holiday homes, cottages, B&amp;Bs and both self-catered and catered apartments, there's accommodation available for everyone at Trip.com. Whether you're looking for low-cost, luxury or something in the middle, you can find everything from honeymoon-worthy 5-star stays to budget backpacker-friendly hostels alike. Just filter, search, and get ready to book.</div><div class="content-title">Best Price Guaranteed</div>
+                            <div class="content-content">There's no need to go searching on several sites to find the best price, with Trip.com's price match, you can be sure you're getting the best possible deal. If you do end up finding a cheaper option elsewhere, we'll even refund the difference. Joining the Trip.com loyalty program is also a great way to save money. In addition to unlocking exclusive member-only discounts, you can earn Trip Coins every time you book, which can instantly be used to save money on your next trip. Plus, membership is free and lasts a lifetime. If you need any help along the way, our award-winning 24/7 customer support will provide all the assistance you need.</div></div>
+                          
+                        </section>
+                    </div>
+            </div>
+
+        </section>
+    </section>
+
+   
+
+
+
+
+    <!-- Hiep Thuan -->
+    <footer>
+        <div class="footer__main">
+            <hr>
+            <div class="footer__item">
+                <h3>Contact Us</h3>
+                <a href="" class="footer_links">Customer Support</a><br>
+                <a href="" class="footer_links">Service Guarantee</a><br>
+                <a href="" class="footer_links">More Service Info</a><br>
+                <a href="" class="footer_links">Website Feedback</a><br>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+
+            </div>
+            <div class="footer__item">
+                <h3>About</h3>
+                <a href="" class="footer_links">About Trip.com</a><br>
+                <a href="" class="footer_links">News</a><br>
+                <a href="" class="footer_links">Careers</a><br>
+                <a href="" class="footer_links">Term &amp; Conditions</a><br>
+                <a href="" class="footer_links">Privacy Statement</a><br>
+                <a href="" class="footer_links">About Trip.com Group</a>
+            </div>
+            <div class="footer__item">
+                <h3>Other Services</h3>
+                <a href="" class="footer_links">Investor Relations</a><br>
+                <a href="" class="footer_links">Trip.com Rewards</a><br>
+                <a href="" class="footer_links">Affiliate Program</a><br>
+                <a href="" class="footer_links">List My Property</a><br>
+                <a href="" class="footer_links">All Hotels</a><br>
+                <a href="" class="footer_links">Become a Supplier</a><br>
+                <a href="" class="footer_links">Security</a>
+            </div>
+            <div class="footer__item"></div>
+            <div class="footer__item"></div>
+            
+    
+        </div>
+        <div class="Copyright">
+            <p>
+
+            </p>
+        </div>
+
+    </footer>
+   <!-- thu vien ho tro -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="./js/index.js"></script>
+   
+   <!-- css -->
+</body>
+
+</html>
