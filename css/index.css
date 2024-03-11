@@ -369,15 +369,15 @@ a{
   .carousel-control-next {
     width: 6vh;
     height: 6vh;
-    background-color: #e1e1e1;
+    background-color:#3365FF;
     border-radius: 50%;
-    top: 50%;
+    top: 58%;
     transform: translateY(-50%);
     opacity: 0.5;
   }
   .carousel-control-prev:hover,
   .carousel-control-next:hover {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .budget-friendly, .trending{
