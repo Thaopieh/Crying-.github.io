@@ -350,7 +350,7 @@ a{
       
     }
     .img-wrapper {
-      height: 10vw;
+      height: 13vw;
     }
   }
   
@@ -362,7 +362,7 @@ a{
   }
 
   .card-body{
-    height: 220px;
+    height: 10rem;
   }
   
   .carousel-control-prev,
@@ -410,6 +410,8 @@ a{
 }
 .card-text{
     margin: 15px 0px;
+    color: #455873;
+    font-weight: 350;
 }
 h5{
     height: 30px;
@@ -418,9 +420,27 @@ h5{
     text-wrap: wrap;
 }
 .btn-primary{
-    float: right;
-
+    position: absolute;
+   top: 89%;
+   left: 35%;
+   font-weight: bold;
+   color: black;
+   border: none;
+   background-color:white;
 }
+
+.from{
+    font-weight: 350;
+    font-size: 13px;
+    color: #455873;
+}
+
+.btn-primary:hover{
+    color: black;
+    border: none;
+   background-color:white;
+}
+
 table {
     display: table;
     border-collapse: separate;
