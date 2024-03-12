@@ -96,8 +96,7 @@ strong {
 }
 
 .searchBox .hotel-searchBox {
-    max-width: 1100px;
-    min-width: 1100px;
+    width: 75%;
     margin: 0 auto;
     background: #ffffff;
     box-shadow: 0px 8px 20px 0px rgba(15, 41, 77, 0.12);
@@ -105,8 +104,8 @@ strong {
     border-radius: 8px;
     padding: 24px 16px;
     position: absolute;
-    top: 140px;
-    left: 192px;
+    top: 30%;
+    left: 13%;
 }
 
 
@@ -135,32 +134,30 @@ strong {
     margin: 0;
     padding-left: 6px;
 }
-.search-container{
-    min-width: 343px;
-}
+
 .search-container:hover{
     border-bottom: 3px solid blue;
 }
 
-.ul-search {
+.flex{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.ul-search {
+    display: grid;
+     grid-template-columns: 2fr 1fr 1.15fr 0.7fr ;
+     grid-gap: 10px;
     height: 70px;
     align-items: center;
     margin-left: -25px;
 }
-
 .calendar-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 4px;
 
-}
-
-.searchButton {
-    margin-right: 10px;
-    width: 100%;
 }
 
 
@@ -180,9 +177,9 @@ strong {
 }
 
 .in {
-    padding: 0 12px;
-    width: 120px;
-    padding-left: 0px;
+   
+    width: 110px;
+
 }
 
 .text {
@@ -218,6 +215,7 @@ strong {
     color: black;
     font-weight: 600;
     display: block;
+    width: 100%;
     
 
 }
@@ -252,6 +250,7 @@ strong {
 .out {
     text-align: end;
     width: 110px;
+    height: 100%;
 
 }
 
@@ -261,14 +260,14 @@ strong {
     outline: none;
     font-size: 14px;
     color: black;
-    text-align: end;
+    /* text-align: end; */
     font-weight: 600;
     width: 100%;
 }
 
 
-.rooms-and-guests {
-    padding: 0 12px;
+.room-guest-container {
+    padding: 0 6px;
 }
 
 .rooms-and-guests-text {
@@ -294,6 +293,7 @@ strong {
     background-color: #3264ff;
     border-radius: 4px;
     border: 0px;
+    width: 100%;
 }
 .search-button:hover{
     background-color: #2953d6;
@@ -370,6 +370,40 @@ strong {
 .gride.pc tbody {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+@media only screen and (max-width:1300px) {
+    .ul-search {
+      grid-template-columns: 1fr;
+    }
+    .hotel-searchBox{
+        height: 300px;
+        /* width: 30%; */
+        width: 10%;
+        
+    
+    }
+    .flex{
+        flex-direction: column;
+        /* flex-shrink: calc(4); */
+        /* width: 0px; */
+        
+    }
+    .searchBox .list-destination,
+.searchBox .rooms-and-guests,
+.calendar-container{
+    width: 100%;
+}
+    .search-container{
+        width: 20%;
+    }
+    .search-button{
+        width: 100%;
+    }
+    .is-travel-working, .star-rating{
+        opacity: 0;
+    }
 }
 
 /* item  */

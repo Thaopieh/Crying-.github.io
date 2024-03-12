@@ -103,7 +103,8 @@
       </div>
     </div>
 
-  </header> <!-- Header search -->
+  </header> 
+  <!-- Header search -->
   <section id="hotel_container">
     <section>
       <article>
@@ -111,71 +112,77 @@
           <div class="searchBox">
             <!-- search bar, Thảo, Thuận -->
             <div class="hotel-searchBox hide-on-mobile">
-              <ul class="ul-search">
-                <li class="list-item list-destination">
-                  <div class="search-container">
-                    <label for="hotel-destination" id="hotel-destination-label">Destination</label>
-                    <div></div>
-                    <input type="text" id="hotel-destination" value="" placeholder="City, airport, region...">
-                    <div></div>
-                  </div>
-                </li>
-                <li class="list-item list-calendar">
-
-                  <div class="calendar-container">
-                    <div class="in">
-                      <label class="text" for="checkIn">Check-in</label>
-                      <input type="text" id="checkIN" value="Wed, Mar 13" placeholder="Select date">
+              <div class="flex">
+                <ul class="ul-search">
+                  <li class="list-item list-destination">
+                    <div class="search-container">
+                      <label for="hotel-destination" id="hotel-destination-label">Destination</label>
+                      <div></div>
+                      <input type="text" id="hotel-destination" value="" placeholder="City, airport, region...">
+                      <div></div>
                     </div>
-                    <div id="time_booking"> 1 night</div>
-                    <div class="out">
-                      <label class="text" for="checkOut">Check-out</label>
-
-                      <input type="text" id="checkOut" value="Fri, Mar 8" placeholder="Select date">
+                  </li>
+                  <li class="list-item list-calendar">
+  
+                    <div class="calendar-container">
+                      <div class="in">
+                        <label class="text" for="checkIn">Check-in</label>
+                        <input type="date" id="checkIN" placeholder="Select date">
+                      </div>
+                      <div id="time_booking"> </div>
+                      <div class="out">
+                        <label class="text" for="checkOut">Check-out</label>
+  
+                        <input type="date" id="checkOut" placeholder="Select date">
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="list-item rooms-and-guests">
-                  <div class="room-guest-container">
-                    <label class="label1" for="rooms-and-guests">Rooms and Guests</label>
-                    <div class="dropdown">
-  <button id="dropbtn" class="dropbtn"><span class="room-item-count" id="room-count">0</span> Room, <span class="adults-item-count" id="adults-count">0</span>  Adults, <span class="children-item-count" id="children-count">0</span>  Children </button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#" class="dropdown-item" data-count="0" data-type="room">
-      <span>Room</span>
-      <span class="room-item-count" id="room-item-count">0</span>
-      <button class="add-btn" data-type="room">+</button>
-    </a>
-    <a href="#" class="dropdown-item" data-count="0" data-type="adults">
-      <span>Adults</span>
-      <span class="adults-item-count" id="adults-item-count">0</span>
-      <button class="add-btn" data-type="adults">+</button>
-    </a>
-    <a href="#" class="dropdown-item" data-count="0" data-type="children" >
-      <span>Children</span>
-      <span class="children-item-count" id="children-item-count">0</span>
-      <button class="add-btn" data-type="children">+</button>
-    </a>
-  </div>
-</div>
-                  </div>
-                </li>
-                <li class="list-item button">
-                  <div class="search-button-container">
-                    <button class="search-button">
-                      <i type="search" class="fa fa-search"></i>
-                      <span>Search</span>
-                    </button>
-                  </div>
-                </li>
-              </ul>                  <!-- </div> -->
+                  </li>
+                  <li class="list-item rooms-and-guests">
+                    <div class="room-guest-container">
+                      <label class="label1" for="rooms-and-guests">Rooms and Guests</label>
+                      <div class="dropdown">
+                        <button id="dropbtn" class="dropbtn"><span class="room-item-count" id="room-count">0</span> Room,
+                          <span class="adults-item-count" id="adults-count">0</span> Adults, <span
+                            class="children-item-count" id="children-count">0</span> Children </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#" class="dropdown-item" data-count="0" data-type="room">
+                            <span>Room</span>
+                            <span class="room-item-count" id="room-item-count">0</span>
+                            <button class="add-btn" data-type="room">+</button>
+                          </a>
+                          <a href="#" class="dropdown-item" data-count="0" data-type="adults">
+                            <span>Adults</span>
+                            <span class="adults-item-count" id="adults-item-count">0</span>
+                            <button class="add-btn" data-type="adults">+</button>
+                          </a>
+                          <a href="#" class="dropdown-item" data-count="0" data-type="children">
+                            <span>Children</span>
+                            <span class="children-item-count" id="children-item-count">0</span>
+                            <button class="add-btn" data-type="children">+</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-item button">
+                    <div class="search-button-container">
+                      <button class="search-button">
+                        <i type="search" class="fa fa-search"></i>
+                        <span>Search</span>
+                      </button>
+                    </div>
+                  </li>
+                </ul> 
+
+              </div>
+             <!-- </div> -->
               <div class="add-on-container">
                 <div class="is-travel-working">
                   <input type="checkbox" id="travel-for-work">
                   <label for="travel-for-work" class="is-travel-working-text">I'm traveling for
                     work</label>
-                  <span class="is-travel-working-icon"><i  class="fa-solid fa-circle-info"></i></span>
-                  
+                  <span class="is-travel-working-icon"><i class="fa-solid fa-circle-info"></i></span>
+
                   <div class="is-travel-working-status">
                     If you select this option, we'll highlight hotels and amenities popular with business travelers.
                   </div>
@@ -184,22 +191,22 @@
                 <div class="star-rating">
                   <label class="star-rating-text">Star Rating</label>
                   <!-- <div class="star-rating-icon"> -->
-                    <span class="star-rating-icon">
-                      <em> ≤ 2</em>
-                      <i class="fa-regular fa-star"></i>
-                    </span>
-                    <span class="star-rating-icon">
-                      <em>3</em>
-                      <i class="fa-regular fa-star"></i>
-                    </span>
-                    <span class="star-rating-icon">
-                      <em>4</em>
-                      <i class="fa-regular fa-star"></i>
-                    </span>
-                    <span class="star-rating-icon">
-                      <em>5</em>
-                      <i class="fa-regular fa-star"></i>
-                    </span>
+                  <span class="star-rating-icon">
+                    <em> ≤ 2</em>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="star-rating-icon">
+                    <em>3</em>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="star-rating-icon">
+                    <em>4</em>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  <span class="star-rating-icon">
+                    <em>5</em>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
 
                 </div>
               </div>
@@ -1070,7 +1077,7 @@
 
   <!-- Hiep Thuan -->
   <footer>
-    <img src="./img/FooterImage/ngay-du-lich-the-gioi-3981.jpg" alt="footer_img" >
+    <img src="./img/FooterImage/ngay-du-lich-the-gioi-3981.jpg" alt="footer_img">
     <div class="footer__main">
       <div class="footer__item">
         <h3>Contact Us</h3>
