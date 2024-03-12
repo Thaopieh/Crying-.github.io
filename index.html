@@ -138,11 +138,26 @@
                 <li class="list-item rooms-and-guests">
                   <div class="room-guest-container">
                     <label class="label1" for="rooms-and-guests">Rooms and Guests</label>
-                    <p id="room-guest-text">
-                      <span>1 room, </span>
-                      <span>2 adults, </span>
-                      <span>0 children</span>
-                    </p>
+                    <div class="dropdown">
+  <button id="dropbtn" class="dropbtn"><span class="room-item-count" id="room-count">0</span> Room, <span class="adults-item-count" id="adults-count">0</span>  Adults, <span class="children-item-count" id="children-count">0</span>  Children </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" class="dropdown-item" data-count="0" data-type="room">
+      <span>Room</span>
+      <span class="room-item-count" id="room-item-count">0</span>
+      <button class="add-btn" data-type="room">+</button>
+    </a>
+    <a href="#" class="dropdown-item" data-count="0" data-type="adults">
+      <span>Adults</span>
+      <span class="adults-item-count" id="adults-item-count">0</span>
+      <button class="add-btn" data-type="adults">+</button>
+    </a>
+    <a href="#" class="dropdown-item" data-count="0" data-type="children" >
+      <span>Children</span>
+      <span class="children-item-count" id="children-item-count">0</span>
+      <button class="add-btn" data-type="children">+</button>
+    </a>
+  </div>
+</div>
                   </div>
                 </li>
                 <li class="list-item button">

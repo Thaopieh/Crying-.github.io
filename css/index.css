@@ -798,3 +798,85 @@ footer img {
      background-color: blue;
      border: 1px solid blue;
    }
+     /* Dropdown */
+     .dropdown {
+        position: relative;
+      }
+      
+      /* Nút dropdown */
+      .dropbtn {
+        background-color: white;
+        padding: 0;
+        font-weight: 700;
+        color: #0f294d;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Mũi tên đi xuống */
+      .dropdown .dropbtn::after {
+        content: "\25BE"; /* Mã Unicode của mũi tên đi xuống */
+        margin-left: 5px;
+      }
+      
+      /* Dropdown content (ẩn đi mặc định) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        z-index: 1;
+      }
+      
+      /* Hiển thị dropdown content khi hover hoặc focus */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* Định dạng các phần tử trong dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      /* Thay đổi màu khi hover */
+      .dropdown-content a:hover {
+        background-color: white;
+      }
+      
+      /* Định dạng cho nút dropdown khi hover */
+      .dropdown:hover .dropbtn {
+        background-color: white;
+      }
+      
+      /* Số lượng */
+      .item-count {
+        margin-left: 10px;
+      }
+      
+      /* Nút cộng */
+      .add-btn {
+        background-color: white;
+        color: blue;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        border-radius: 50%;
+        border: 2px solid blue;
+        cursor: pointer;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
