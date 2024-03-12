@@ -1,30 +1,44 @@
-const multipleItemCarousel = document.querySelector("#carouselExampleControls");
+function setupCarousel(carouselId) {
+  const multipleItemCarousel = document.querySelector(carouselId);
 
-if (window.matchMedia("(min-width:576px)").matches) {
-  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-    interval: false
-  });
+  if (multipleItemCarousel) { // Kiểm tra xem carousel có tồn tại không
+    if (window.matchMedia("(min-width:576px)").matches) {
+      const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+        interval: false
+      });
 
-  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-  var cardWidth = $(".carousel-item").width();
+      var carouselWidth = $(multipleItemCarousel).find(".carousel-inner").prop('scrollWidth');
+      var cardWidth = $(multipleItemCarousel).find(".carousel-item").width();
 
-  var scrollPosition = 0;
+      var scrollPosition = 0;
 
-  $(".carousel-control-next").on("click", function () {
-    if (scrollPosition < carouselWidth - cardWidth * 4) {
-      scrollPosition = scrollPosition + 4*cardWidth;
-      $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+      $(multipleItemCarousel).find(".carousel-control-next").on("click", function () {
+        if (scrollPosition < carouselWidth - cardWidth * 4) {
+          scrollPosition = scrollPosition + 4*cardWidth;
+          $(multipleItemCarousel).find(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+        }
+      });
+      $(multipleItemCarousel).find(".carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+          scrollPosition = scrollPosition - 4*cardWidth;
+          $(multipleItemCarousel).find(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+        }
+      });
+    } else {
+      $(multipleItemCarousel).addClass("slide");
     }
-  });
-  $(".carousel-control-prev").on("click", function () {
-    if (scrollPosition > 0) {
-      scrollPosition = scrollPosition - 4*cardWidth;
-      $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
-    }
-  });
-} else {
-  $(multipleItemCarousel).addClass("slide");
+  } else {
+    console.error("Carousel with ID " + carouselId + " not found.");
+  }
 }
+
+// Bắt sự kiện click trên nút prev và next của carousel và gọi hàm setupCarousel
+$(".carousel-control-prev, .carousel-control-next").click(function() {
+  // Lấy giá trị của thuộc tính data-bs-target
+  var carouselId = $(this).attr("data-bs-target");
+  // Lấy ID của carousel từ chuỗi
+  setupCarousel(carouselId);
+});
  // Function to toggle collapse and button styles
 
     function toggleCollapse(btnNumber) {
