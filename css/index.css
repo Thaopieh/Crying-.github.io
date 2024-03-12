@@ -697,6 +697,9 @@ footer img {
 .Copyright p {
     text-align: center;
     font-size: 12px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    
 }
 
 
