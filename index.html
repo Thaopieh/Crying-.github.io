@@ -32,24 +32,23 @@
 </head>
 
 <body>
-  <!-- vô web inspect code lên cop layout -->
 
   <!-- Quang -->
   <header>
     <div class="container-fluid navi">
       <div class="row">
         <div class="col-lg-2">
-          <h1 style="color: white;">Trip.com</h1>
+          <h1 style="color: white;">LastingTrip.com</h1>
         </div>
         <div class="col-lg-5">
           <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm justify-content-start">
 
             <ul class="navi navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Hotels</a>
+                <a class="nav-link" href="#">Khách sạn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Flights</a>
+                <a class="nav-link" href="#">Chuyến bay/a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Trains</a>
@@ -80,30 +79,24 @@
                 <a class="nav-link" href="#">List My Property</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="#">Trợ giúp</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">VND</a>
               </li>
               <li class="nav-item ">
-                <button type="button" class="header-search-booking-btn">Search Booking</button>
+                <button type="button" class="header-search-booking-btn">Tìm kiếm đặt chỗ</button>
               </li>
               <li class="nav-item ">
-                <button type="button" class="header-register-btn">Sign in / Register</button>
+                <button type="button" class="header-register-btn">Đăng kí / Đăng nhập</button>
               </li>
-
-
             </ul>
-
           </nav>
         </div>
-
-
-
       </div>
     </div>
 
-  </header> 
+  </header>
   <!-- Header search -->
   <section id="hotel_container">
     <section>
@@ -116,47 +109,50 @@
                 <ul class="ul-search">
                   <li class="list-item list-destination">
                     <div class="search-container">
-                      <label for="hotel-destination" id="hotel-destination-label">Destination</label>
+                      <label for="hotel-destination" id="hotel-destination-label">Địa điểm</label>
                       <div></div>
-                      <input type="text" id="hotel-destination" value="" placeholder="City, airport, region...">
+                      <input type="text" id="hotel-destination" value=""
+                        placeholder="Thành phố, sân bay, khu du lịch,...">
                       <div></div>
                     </div>
                   </li>
+
                   <li class="list-item list-calendar">
-  
                     <div class="calendar-container">
                       <div class="in">
                         <label class="text" for="checkIn">Check-in</label>
-                        <input type="date" id="checkIN" placeholder="Select date">
+                        <input type="date" id="checkIN" placeholder="Chọn ngày">
                       </div>
                       <div id="time_booking"> </div>
                       <div class="out">
                         <label class="text" for="checkOut">Check-out</label>
-  
-                        <input type="date" id="checkOut" placeholder="Select date">
+
+                        <input type="date" id="checkOut" placeholder="Chọn ngày">
                       </div>
                     </div>
                   </li>
-                  <li class="list-item rooms-and-guests">
+
+                  <li class=" list-item rooms-and-guests">
                     <div class="room-guest-container">
-                      <label class="label1" for="rooms-and-guests">Rooms and Guests</label>
+                      <label class="label1" for="rooms-and-guests">Số lượng phòng và khách</label>
                       <div class="dropdown">
-                        <button id="dropbtn" class="dropbtn"><span class="room-item-count" id="room-count">0</span> Room,
-                          <span class="adults-item-count" id="adults-count">0</span> Adults, <span
-                            class="children-item-count" id="children-count">0</span> Children </button>
+                        <button id="dropbtn" class="dropbtn"><span class="room-item-count" id="room-count">0</span>
+                          Phòng,
+                          <span class="adults-item-count" id="adults-count">0</span> Người lớn, <span
+                            class="children-item-count" id="children-count">0</span> Trẻ em </button>
                         <div id="myDropdown" class="dropdown-content">
                           <a href="#" class="dropdown-item" data-count="0" data-type="room">
-                            <span>Room</span>
+                            <span>Phòng</span>
                             <span class="room-item-count" id="room-item-count">0</span>
                             <button class="add-btn" data-type="room">+</button>
                           </a>
                           <a href="#" class="dropdown-item" data-count="0" data-type="adults">
-                            <span>Adults</span>
+                            <span>Người lớn</span>
                             <span class="adults-item-count" id="adults-item-count">0</span>
                             <button class="add-btn" data-type="adults">+</button>
                           </a>
                           <a href="#" class="dropdown-item" data-count="0" data-type="children">
-                            <span>Children</span>
+                            <span>Trẻ em</span>
                             <span class="children-item-count" id="children-item-count">0</span>
                             <button class="add-btn" data-type="children">+</button>
                           </a>
@@ -168,28 +164,26 @@
                     <div class="search-button-container">
                       <button class="search-button">
                         <i type="search" class="fa fa-search"></i>
-                        <span>Search</span>
+                        <span>Tìm kiếm</span>
                       </button>
                     </div>
                   </li>
-                </ul> 
-
+                </ul>
               </div>
-             <!-- </div> -->
+
+              <!-- </div> -->
               <div class="add-on-container">
                 <div class="is-travel-working">
                   <input type="checkbox" id="travel-for-work">
-                  <label for="travel-for-work" class="is-travel-working-text">I'm traveling for
-                    work</label>
+                  <label for="travel-for-work" class="is-travel-working-text">Tôi đang đi công tác</label>
                   <span class="is-travel-working-icon"><i class="fa-solid fa-circle-info"></i></span>
-
                   <div class="is-travel-working-status">
-                    If you select this option, we'll highlight hotels and amenities popular with business travelers.
+                    Nếu bạn chọn lựa chọn này, chúng tôi sẽ ưu tiên những khách sạn và tiện nghi phù hợp với doanh nhân.
                   </div>
-
                 </div>
+
                 <div class="star-rating">
-                  <label class="star-rating-text">Star Rating</label>
+                  <label class="star-rating-text">Xếp hạng sao</label>
                   <!-- <div class="star-rating-icon"> -->
                   <span class="star-rating-icon">
                     <em> ≤ 2</em>
@@ -207,14 +201,11 @@
                     <em>5</em>
                     <i class="fa-regular fa-star"></i>
                   </span>
-
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-
       </article>
     </section>
   </section>
@@ -226,7 +217,7 @@
 
       <div class="topPick">
         <div id="carouselExampleControls1" class="carousel">
-          <h2>Top Picks of Luxurious 5-star Hotels</h2>
+          <h2>Lựa chọn hàng đầu về khách sạn 5 sao sang trọng</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="#">
@@ -238,9 +229,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Cozrum Homes - Sonata Residence</h5>
                     </a>
-                    <p class="card-text">
-                      Nguyen Thi Thap Street, Tan Phu Ward, District 7, HCMC | 5.2 KM from city
-                      center</p>
+                    <p class="card-text">Đường Nguyễn Thị Thập, Phường Tân Phú, Quận 7, TP.HCM | Cách trung tâm thành
+                      phố 5.2 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       1,015,000</a>
                   </div>
@@ -258,8 +248,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Holiday Inn & Suites Saigon Airport</h5>
                     </a>
-                    <p class="card-text">
-                      Cong Hoa Street, Tan Binh District, HCMC | 4.7 KM from city center</p>
+                    <p class="card-text">Đường Cộng Hòa, Quận Tân Bình, TP.HCM | Cách trung tâm thành phố 4.7 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       2,324,245</a>
                   </div>
@@ -277,8 +266,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">LA VELA SAIGON HOTEL</h5>
                     </a>
-                    <p class="card-text">Nam Ky Khoi Nghia Street, District 3, HCMC | 1.8 KM from
-                      city center</p>
+                    <p class="card-text">Đường Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM | Cách trung tâm thành phố 1.8 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       3,438,555</a>
                   </div>
@@ -296,8 +284,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Wink Hotel Saigon Centre</h5>
                     </a>
-                    <p class="card-text">Nguyen Binh Khiem Street, District 1, HCMC | 1.3 KM from
-                      city center</p>
+                    <p class="card-text">Đường Nguyễn Bỉnh Khiêm, Quận 1, TP.HCM | Cách trung tâm thành phố 1.3 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       1,234,568</a>
                   </div>
@@ -315,8 +302,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Oakwood Hotel & Apartments Saigon</h5>
                     </a>
-                    <p class="card-text">Ung Van Khiem Street,Binh Thanh District, HCMC | 4.5 KM
-                      from city center</p>
+                    <p class="card-text">Đường Ung Văn Khiêm, Quận Bình Thạnh, TP.HCM | Cách trung tâm thành phố 4.5 km
+                    </p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       2,081,226</a>
                   </div>
@@ -334,8 +321,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">M City Hotel Saigon</h5>
                     </a>
-                    <p class="card-text">Pham Hong Thai Street, District 1, HCMC | 500 M from city
-                      center</p>
+                    <p class="card-text"> Đường Phạm Hồng Thái, Quận 1, TP.HCM | Cách trung tâm thành phố 500 m</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       4,234,455</a>
                   </div>
@@ -359,7 +345,7 @@
 
       <div class="budget-friendly">
         <div id="carouselExampleControls2" class="carousel">
-          <h2>Budget-friendly Hotels Worldwide</h2>
+          <h2>Khách sạn phù hợp túi tiền</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="#">
@@ -371,9 +357,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Sakura Hostel Saigon</h5>
                     </a>
-                    <p class="card-text">Nguyen Trai Street, Ben Thanh Ward, District 1, HCMC | 1.0
-                      KM from
-                      city center</p>
+                    <p class="card-text">Đường Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM | Cách trung tâm thành phố
+                      1.0 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       300,000</a>
                   </div>
@@ -391,9 +376,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">LANGUAGE EXCHANGE HOTEL 3</h5>
                     </a>
-                    <p class="card-text">Nguyen Trai Street, Nguyen Cu Trinh Ward, District 1, HCMC
-                      | 1.5 KM from city
-                      center</p>
+                    <p class="card-text">Đường Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM | Cách trung tâm
+                      thành phố 1.5 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       144,000</a>
                   </div>
@@ -411,9 +395,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Saigoncucu Hotel</h5>
                     </a>
-                    <p class="card-text">Tran Hung Dao Street, Nguyen Cu Trinh Ward, District 1,
-                      HCMC | 1.5 KM from city
-                      center</p>
+                    <p class="card-text">Đường Trần Hưng Đạo, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM | Cách trung tâm
+                      thành phố 1.5 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       148,148</a>
                   </div>
@@ -431,9 +414,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Rita Hotel</h5>
                     </a>
-                    <p class="card-text">Tran Quoc Hoan Street, Ward 4, Tan Binh District, HCMC |
-                      5.0 KM from city
-                      center</p>
+                    <p class="card-text">Đường Trần Quốc Hoa, Phường 4, Quận Tân Bình, TP.HCM | Cách trung tâm thành phố
+                      5.0 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       158,730</a>
                   </div>
@@ -451,8 +433,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Ehome Saigon</h5>
                     </a>
-                    <p class="card-text">Nguyen Ngu Lao Street, District 1, HCMC | 1.1 KM from city
-                      center</p>
+                    <p class="card-text">Đường Phạm Ngũ Lão, Quận 1, TP.HCM | Cách trung tâm thành phố 1.1 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       144,000</a>
                   </div>
@@ -471,8 +452,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Mai Hoang Hotel</h5>
                     </a>
-                    <p class="card-text">Street No.42, Binh Tan District, HCMC | 10.1 KM from city
-                      center</p>
+                    <p class="card-text">Đường số 42, Quận Bình Tân, TP.HCM | Cách trung tâm thành phố 10.1 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       185,185</a>
                   </div>
@@ -498,7 +478,7 @@
 
       <div class="trending">
         <div id="carouselExampleControls3" class="carousel">
-          <h2>Trending Guest Houses Worldwide</h2>
+          <h2>Nhà khách thịnh hành</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="#">
@@ -510,8 +490,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Notre Maison 8 Saigon</h5>
                     </a>
-                    <p class="card-text">Vo Duy Ninh Street, Binh Thanh District, HCMC | 3.0 KM from
-                      city center</p>
+                    <p class="card-text">Đường Võ Duy Ninh, Quận Bình Thạnh, TP.HCM | Cách trung tâm thành phố 3.0 km
+                    </p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       637,775</a>
                   </div>
@@ -529,8 +509,8 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Landmark Vinhomes Christine Apartment</h5>
                     </a>
-                    <p class="card-text">Dien Bien Phu Street, Binh Thanh District, HCMC | 3.1 KM
-                      from city center</p>
+                    <p class="card-text">Đường Điện Biên Phu, Quận Bình Thạnh, TP.HCM | Cách trung tâm thành phố 3.1 km
+                    </p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       1,002,778</a>
                   </div>
@@ -548,8 +528,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Jan Hostel Central Point</h5>
                     </a>
-                    <p class="card-text">Tran Hung Dao Street, District 1, HCMC | 1.4KM from city
-                      center</p>
+                    <p class="card-text">Đường Trần Hưng Đạo, Quận 1, TP.HCM | Cách trung tâm thành phố 1.4 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       1,344,759</a>
                   </div>
@@ -567,8 +546,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Bear's House - The Riverside</h5>
                     </a>
-                    <p class="card-text">Truong Sa Street, Binh Thanh District, HCMC | 2.4 KM from
-                      city center</p>
+                    <p class="card-text">Đường Trường Sa, Quận Bình Thạnh, TP.HCM | Cách trung tâm thành phố 2.4 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       498,750</a>
                   </div>
@@ -586,8 +564,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">DDA Hotel District 1</h5>
                     </a>
-                    <p class="card-text">De Tham Street, District 1, HCMC | 1.5 KM from city center
-                    </p>
+                    <p class="card-text">Đường Đề Thám, Quận 1, TP.HCM | Cách trung tâm thành phố 1.5 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       399,399</a>
                   </div>
@@ -605,8 +582,7 @@
                     <a class="click-item" href="#">
                       <h5 class="card-title">Beauty Guesthouse</h5>
                     </a>
-                    <p class="card-text">Pham Ngu Lao Street, District 1, HCMC | 1.2 KM from city
-                      center</p>
+                    <p class="card-text">Đường Phạm Ngũ Lão, Quận 1, TP.HCM | Cách trung tâm thành phố 1.2 km</p>
                     <a href="#" class="btn btn-primary"><span class="from">From</span> VND
                       441,885</a>
                   </div>
@@ -627,7 +603,6 @@
           </button>
         </div>
       </div>
-
       </div>
 
       <div class="faq-hotel">
@@ -642,14 +617,14 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne" style="background-color: white; ">
-                  How do I book a hotel on Trip.com?
-                </button>
+                  Làm cách nào để tôi có thể đặt phòng trên LastingTrip.com? </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                  To book a hotel on Trip.com, simply enter your destination, travel dates, and the number of guests on
-                  the page. Then, browse through the available hotels and select the one you want to book. Follow the
-                  prompts to enter your payment information and complete the booking.
+                  Để đặt phòng khách sạn trên LastingTrip.com, bạn chỉ cần nhập điểm đến, ngày đi, ngày về và số lượng
+                  khách. Sau
+                  đó, dạo xem các khách sạn có sẵn và chọn khách sạn bạn muốn đặt. Thực hiện từng bướcnhập thông tin
+                  thanh toán của bạn và hoàn tất việc đặt phòng.
                 </div>
               </div>
             </div>
@@ -660,14 +635,13 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo" style="background-color: white;">
-                  How to get cheap hotels on Trip.com?
-                </button>
+                  Làm thế nào để có được khách sạn giá rẻ trên LastingTrip.com? </button>
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  There are several ways to discover affordable hotels on Trip.com. You can narrow down your search
-                  results by filtering hotels according to your preferred price range, or you can sort the results by
-                  price to view the least expensive options first.
+                  Có nhiều cách để tìm được các khách sạn giá cả phải chăng trên LastingTrip.com. Bạn có thể thu hẹp
+                  phạm vi tìm kiếm của mình bằng cách lọc khách sạn theo mức giá phù hợp, hoặc bạn có thể sắp xếp
+                  kết quả theo giá để xem các tùy chọn ít giá rẻ trước tiên.
                 </div>
               </div>
             </div>
@@ -678,15 +652,14 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseThree" style="background-color: white;">
-                  Where can I find hotel deals on Trip.com?
-                </button>
+                  Tôi có thể tìm những ưu đãi khách sạn ở đâu trên LastingTrip.com? </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  Trip.com offers a diverse selection of hotel deals and promotions that are available throughout the
-                  year. You can easily find these special offers on our deals page. Moreover, if you are a member of our
-                  loyalty program, you can log in to your account and discover exclusive discounted rates at hotel list
-                  pages.
+                  LastingTrip.com cung cấp nhiều ưu đãi và khuyến mãi khách sạn có sẵn trong suốt cả năm. Bạn có thể
+                  dễ dàng tìm thấy những ưu đãi đặc biệt này trên trang ưu đãi của chúng tôi. Hơn nữa, nếu bạn là thành
+                  viên của chương trình khách hàng thân thiết của chúng tôi, bạn có thể đăng nhập vào tài khoản của mình
+                  và khám phá mức giá chiết khấu độc quyền tại các trang danh sách khách sạn.
                 </div>
               </div>
             </div>
@@ -697,13 +670,11 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFour" style="background-color: white;">
-                  What is the way to get lower prices at hotels?
-                </button>
+                  Cách để có được giá thấp hơn khi đặt phòng là gì?</button>
               </h2>
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  Sometimes booking hotels in midweek is cheaper, but it also depends on the season.
-                </div>
+                  Đôi khi đặt phòng khách sạn vào giữa tuần rẻ hơn, nhưng nó cũng phụ thuộc vào mùa. </div>
               </div>
             </div>
 
@@ -713,13 +684,14 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFive" style="background-color: white;">
-                  How many hotels are listed in Trip.com?
-                </button>
+                  Có bao nhiêu khách sạn trên LastingTrip.com vậy? </button>
               </h2>
               <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  There are over 5,000,000 hotels in more than 230 countries or regions on Trip.com. Don't know which
+                  There are over 5,000,000 Khách sạn ở more than 230 countries or regions on Trip.com. Don't know which
                   hotel to book? Browse the site to get ideas!
+                  Có hơn 1000 khách sạn trên LastingTrip.com. Bạn không biết nên đặt khách sạn nào? Hãy dạo xem một vòng
+                  nhé!
                 </div>
               </div>
             </div>
@@ -730,14 +702,13 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseSix" style="background-color: white;">
-                  Can I cancel or change my hotel reservation on Trip.com?
-                </button>
+                  Tôi có thể hủy hoặc thay đổi phòng trên LastingTrip.com không? </button>
               </h2>
               <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  It depends on the hotel policy and cancellation date. Kindly check the policy section of related hotel
-                  pages. To cancel or change your reservation, log in to your Trip.com account, go to "My Bookings," and
-                  follow the instructions.
+                  Điều này phụ thuộc vào chính sách khách sạn và thời gian hủy. Bạn hãy kiểm tra phần chính sách của
+                  khách sạn liên quan. Để hủy hoặc thay đổi đặt phòng của bạn, hãy đăng nhập vào tài khoản
+                  LastingTrip.com của bạn, đi tới "Đặt chỗ của tôi" và làm theo hướng dẫn.
                 </div>
               </div>
             </div>
@@ -748,46 +719,45 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseSeven" style="background-color: white;">
-                  How do I contact Trip.com customer service?
-                </button>
+                  Làm sao để liên hệ với dịch vụ chăm sóc khách hàng của LastingTrip.com? </button>
               </h2>
               <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  You can contact Trip.com 24/7 customer service by visiting the Trip.com help center and submitting a
-                  support request. You can also contact them by phone or chat, depending on your location.
+                  Bạn có thể liên hệ với chúng tôi 24/7 bằng cách truy cập trung tâm trợ giúp LastingTrip.com
+                  và gửi yêu cầu hỗ trợ. Bạn cũng có thể liên hệ qua điện thoại hoặc trò chuyện, tùy thuộc vào vị
+                  trí của bạn.
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
+
       <div class="info-hotel">
         <div class="seo-htl-table-info pc ">
-          <h2 class="title">Hotel Info</h2>
+          <h2 class="title">Thông tin khách sạn</h2>
           <table>
             <tbody>
               <tr>
-                <th>Number of hotels</th>
+                <th>Số lượng khách sạn</th>
                 <td>
-                  <span>7,131,656</span>
+                  <span>1,121</span>
                 </td>
               </tr>
               <tr>
-                <th>Number of Reviews </th>
+                <th>Số lượng đánh giá</th>
                 <td>
-                  <span>90,240,053</span>
+                  <span>123,456</span>
                 </td>
               </tr>
               <tr>
-                <th>Lowest Price</th>
+                <th>Mức giá thấp nhất</th>
                 <td>
-                  <span>VND 192,100</span>
+                  <span>VND 111,000</span>
                 </td>
               </tr>
-
               <tr>
-                <th>Highest Price</th>
+                <th>Mức giá cao nhất</th>
                 <td>
                   <span>VND 17,102,173</span>
                 </td>
@@ -795,37 +765,39 @@
             </tbody>
           </table>
         </div>
+
         <div class="hotel-guide  ">
-          <h2 class="title">
-            Hotels on Trip.com
-          </h2>
+          <h2 class="title">Khách sạn trên LastingTrip.com </h2>
           <section id="guide_nav_v8">
             <div class="hotel-guide-detail">
-              <div class="content-title">Hotels to Suit Everyone</div>
-              <div class="content-content">We all know that the hotel can make or break a holiday, which is why, at
-                Trip.com, you can find hotels that tick every box. With a choice of over 5,000,000 hotels in more than
-                230 countries and regions across the world, whether you're jetting off far or staying closer to home,
-                finding accommodation has never been easier. From hotels to hostels, holiday homes, cottages, B&amp;Bs
-                and both self-catered and catered apartments, there's accommodation available for everyone at Trip.com.
-                Whether you're looking for low-cost, luxury or something in the middle, you can find everything from
-                honeymoon-worthy 5-star stays to budget backpacker-friendly hostels alike. Just filter, search, and get
-                ready to book.</div>
-              <div class="content-title">Best Price Guaranteed</div>
-              <div class="content-content">There's no need to go searching on several sites to find the best price, with
-                Trip.com's price match, you can be sure you're getting the best possible deal. If you do end up finding
-                a cheaper option elsewhere, we'll even refund the difference. Joining the Trip.com loyalty program is
-                also a great way to save money. In addition to unlocking exclusive member-only discounts, you can earn
-                Trip Coins every time you book, which can instantly be used to save money on your next trip. Plus,
-                membership is free and lasts a lifetime. If you need any help along the way, our award-winning 24/7
-                customer support will provide all the assistance you need.</div>
+              <div class="content-title">Khách sạn phù hợp với tất cả mọi người</div>
+              <div class="content-content">
+                Chúng ta đều biết, khách sạn có thể quyết định một kỳ nghỉ. Đó là lý do tại sao, tại LastingTrip.com,
+                bạn có thể tìm thấy các khách sạn phù hợp với nhu cầu của mình. Với sự lựa chọn của hơn 1.000 khách sạn,
+                cho dù bạn đang bay hay ở gần nhà hơn, việc tìm chỗ ở chưa bao giờ dễ dàng hơn thế. Từ khách sạn đến nhà
+                nghỉ, homestay, luôn luôn có chỗ ở cho tất cả mọi người tại LastingTrip.com. Cho dù bạn đang tìm kiếm ở
+                chi phí thấp, sang trọng hay thứ gì đó ở giữa, bạn có thể tìm thấy mọi thứ từ kỳ nghỉ 5 sao xứng đáng
+                với tuần trăng mật đến các nhà nghỉ thân thiện với du khách bình dân. Chỉ cần lọc, tìm kiếm và
+                sẵn sàng đặt chỗ. thôi nào.</div>
+              <div class="content-title">Đảm bảo mức giá tốt nhất</div>
+              <div class="content-content">Không cần phải tìm kiếm trên một số trang web khác để tìm giá tốt nhất, với
+                LastingTrip.com, bạn có thể chắc chắn rằng bạn đang nhận deal tốt nhất có thể. Nếu cuối
+                cùng bạn tìm thấy một lựa chọn rẻ hơn ở nơi khác, chúng tôi thậm chí sẽ hoàn lại khoản chênh lệch. Tham
+                gia chương trình khách hàng thân thiết LastingTrip.com cũng là một cách tuyệt vời để tiết kiệm tiền.
+                Ngoài việc mở khóa giảm giá độc quyền chỉ dành cho thành viên, bạn có thể kiếm được xu chuyến đi mỗi khi
+                đặt chỗ, có thể được sử dụng ngay lập tức để tiết kiệm tiền cho chuyến đi tiếp theo của bạn. Thêm vào
+                đó, tư cách thành viên là miễn phí và kéo dài suốt đời. Nếu bạn cần bất kỳ trợ giúp nào trên đường đi,
+                bộ phận hỗ trợ khách hàng 24/7 từng đoạt giải thưởng của chúng tôi sẽ cung cấp tất cả các hỗ trợ bạn
+                cần.
+              </div>
             </div>
-
           </section>
         </div>
       </div>
+
       <div class="recommended">
         <div class="thetitle">
-          <h2>Recommandations</h2>
+          <h2>Gợi ý</h2>
         </div>
         <div class="container-fluid">
           <div class="row">
@@ -833,12 +805,12 @@
               <div class="inforall">
                 <!-- Set initial button styles for the first button -->
                 <button class="btn btn-outline-info" type="button" onclick="toggleCollapse(1)"
-                  style="border:none; color: #fff; background-color: #10294D;">Trending Cities</button>
+                  style="border:none; color: #fff; background-color: #10294D;">Thành phố nổi tiếng</button>
                 <!-- Other buttons -->
                 <button style="border:none;" class="btn btn-outline-info" type="button"
-                  onclick="toggleCollapse(2)">Popular hotels</button>
-                <button style="border:none;" class="btn btn-outline-info" type="button"
-                  onclick="toggleCollapse(3)">Explore More</button>
+                  onclick="toggleCollapse(2)">Khách sạn phổ biến</button>
+                <button style="border:none;" class="btn btn-outline-info" type="button" onclick="toggleCollapse(3)">Khám
+                  phá nhiều hơn</button>
               </div>
 
               <!-- Collapsible content -->
@@ -846,30 +818,30 @@
                 <div class="container">
                   <div class="row">
                     <div class="col">
-                      <a href="#">Hotels in Hong Kong</a>
+                      <a href="#">Khách sạn ở Thành phố Hồ Chí Minh</a>
                     </div>
                     <div class="col">
-                      <a href="#">Hotels in Erenhot</a>
+                      <a href="#">Khách sạn ở Đà Nẵng</a>
                     </div>
                     <div class="col">
-                      <a href="#">Hotels in Hat Yai</a>
+                      <a href="#">Khách sạn ở Hà Nội</a>
                     </div>
                     <div class="col">
-                      <a href="#">Hotels in New York</a>
+                      <a href="#">Khách sạn ở Phú Quốc</a>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <a href="#">Hotels in Cavite</a>
+                      <a href="#">Khách sạn ở Bà Rịa - Vũng Tàu</a>
                     </div>
                     <div class="col">
-                      <a href="#">Hotels in Shanghai</a>
+                      <a href="#">Khách sạn ở Hội An</a>
                     </div>
                     <div class="col">
-                      <a href="#">Hotels in Tehran</a>
+                      <a href="#">Khách sạn ở Ninh Bình</a>
                     </div>
                     <div class="col">
-                      <a href="#">Hotels in Ashgabat</a>
+                      <a href="#">Khách sạn ở Nha Trang</a>
                     </div>
                   </div>
                   <div class="row">
@@ -976,13 +948,13 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <a href="#">Luxury Hotels in Fes</a>
+                      <a href="#">Luxury Khách sạn ở Fes</a>
                     </div>
                     <div class="col">
-                      <a href="#">Luxury Hotels in Philadelphia</a>
+                      <a href="#">Luxury Khách sạn ở Philadelphia</a>
                     </div>
                     <div class="col">
-                      <a href="#">Luxury Hotels in Laguna Beach</a>
+                      <a href="#">Luxury Khách sạn ở Laguna Beach</a>
                     </div>
                     <div class="col">
                       <a href="#">Somerset Ekamai Bangkok</a>
@@ -1036,16 +1008,16 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <a href="#">Pet Friendly Hotels in Leicester</a>
+                      <a href="#">Pet Friendly Khách sạn ở Leicester</a>
                     </div>
                     <div class="col">
-                      <a href="#">Luxury Hotels in Nagpur</a>
+                      <a href="#">Luxury Khách sạn ở Nagpur</a>
                     </div>
                     <div class="col">
                       <a href="#">abu Dhabi beach hotels</a>
                     </div>
                     <div class="col">
-                      <a href="#">Luxury Hotels in Raleigh</a>
+                      <a href="#">Luxury Khách sạn ở Raleigh</a>
                     </div>
                   </div>
                   <div class="row">
@@ -1066,14 +1038,8 @@
               </div>
             </div>
           </div>
-
     </section>
   </section>
-
-
-
-
-
 
   <!-- Hiep Thuan -->
   <footer>
@@ -1081,43 +1047,39 @@
     <div class="footer__main">
       <div class="footer__item">
         <h3>Contact Us</h3>
-        <a href="" class="footer_links">Customer Support</a><br>
-        <a href="" class="footer_links">Service Guarantee</a><br>
-        <a href="" class="footer_links">More Service Info</a><br>
+        <a href="" class="footer_links">Chăm sóc khách hàng</a><br>
+        <a href="" class="footer_links">Đảm bảo dịch vụ</a><br>
+        <a href="" class="footer_links">Thêm thông tin về dịch vụ</a><br>
         <a href="" class="footer_links">Website Feedback</a><br>
 
 
       </div>
       <div class="footer__item">
         <h3>About</h3>
-        <a href="" class="footer_links">About Trip.com</a><br>
-        <a href="" class="footer_links">News</a><br>
-        <a href="" class="footer_links">Careers</a><br>
-        <a href="" class="footer_links">Term &amp; Conditions</a><br>
-        <a href="" class="footer_links">Privacy Statement</a><br>
-        <a href="" class="footer_links">About Trip.com Group</a>
+        <a href="" class="footer_links">Giới thiệu về LastingTrip.com</a><br>
+        <a href="" class="footer_links">Tin tức</a><br>
+        <a href="" class="footer_links">Tuyển dụng</a><br>
+        <a href="" class="footer_links">Điều khoản &amp; Điều kiện</a><br>
+        <a href="" class="footer_links">Chính sách quyền riêng</a><br>
       </div>
       <div class="footer__item">
-        <h3>Other Services</h3>
-        <a href="" class="footer_links">Investor Relations</a><br>
-        <a href="" class="footer_links">Trip.com Rewards</a><br>
-        <a href="" class="footer_links">Affiliate Program</a><br>
-        <a href="" class="footer_links">List My Property</a><br>
-        <a href="" class="footer_links">All Hotels</a><br>
-        <a href="" class="footer_links">Become a Supplier</a><br>
-        <a href="" class="footer_links">Security</a>
+        <h3>Dịch vụ khác</h3>
+        <a href="" class="footer_links">Nhà đầu tư</a><br>
+        <a href="" class="footer_links">Phần thưởng Lasting.com</a><br>
+        <a href="" class="footer_links">Chương trình liên kết</a><br>
+        <a href="" class="footer_links">Liệt kê tài sản của tôi</a><br>
+        <a href="" class="footer_links">Tất cả khách sạn</a><br>
+        <a href="" class="footer_links">Trở thành nhà cung cấp</a><br>
+        <a href="" class="footer_links">An ninh</a>
       </div>
 
 
     </div>
     <div class="Copyright">
       <p>
-        Copyright &copy; 2024 Trip.com Travel Singapore Pte. Ltd. All rights reserved
-        <br>
-        Site Operator: Trip.com Travel Singapore Pte. Ltd.
+        Copyright &copy; 2024 LastingTrip.com. Nhóm 11 - NT208. All rights reserved
       </p>
     </div>
-
   </footer>
 
   <div class="back-to-top">
