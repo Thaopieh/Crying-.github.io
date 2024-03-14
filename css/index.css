@@ -23,10 +23,15 @@ header {
     z-index: 99999;
     width: 100%;
     border-radius: 10px;
+    /* height: 120%; */
 }
 
+h1{
+    /* font-size: 0%; */
+}
 .navi {
     background-color: rgb(48, 93, 209);
+    /* height: 120%; */
 }
 
 .navi a {
@@ -136,6 +141,7 @@ strong {
 #hotel-destination-label {
     margin: 0;
     padding-left: 6px;
+    width: 130px;
 }
 
 .search-container:hover {
